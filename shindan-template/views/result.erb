@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <title>ストレス診断</title>
+</head>
+<body class="result-view">
+  <header>
+    <div class="header-text-wrap">
+      <h1>健康診断アプリ</h1>
+      <p>健康診断アプリで、末永く生きよう！</p>
+    </div>
+  </header>
+  <main>
+    <div class="answer-item-wrap">
+      <div class="answer-item">
+        <p>A　健康診断結果</p>
+        <div class="answer-text-wrap">
+          <%= @stress_explanation %>
+        </div>
+      </div>
+    </div>
+    <a href="/" class="button result-button">もう一度診断する</a>
+  </main>
+</body>
+</html>

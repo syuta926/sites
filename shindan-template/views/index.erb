@@ -1,0 +1,93 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <title>健康診断</title>
+</head>
+<body class="question-view">
+  <header>
+    <div class="header-text-wrap">
+      <h1>健康診断アプリ</h1>
+      <p>健康診断アプリで、末永く生きましょう！</p>
+    </div>
+  </header>
+  <main>
+    <form action="/result" method="get">
+      <div class="question-item">
+        <p>Q 過去1ヶ月間、どのくらい運動しましたか？</p>
+        <div class="input-wrap">
+          <label>
+            <input type="radio" name="stress_frequency" value="なし" required>それ以下なんです…
+          </label>
+          <label>
+            <input type="radio" name="stress_frequency" value="たまに">週3,4日くらいだぞ！
+          </label>
+          <label>
+            <input type="radio" name="stress_frequency" value="ほとんど">週5,6日ぐらいかな？
+          </label>
+          <label>
+            <input type="radio" name="stress_frequency" value="毎日">毎日やってます！
+          </label>
+        </div>
+      </div>
+      <div class="question-item">
+        <p>Q 一日あたりの運動時間は平均何時間ですか？</p>
+        <div class="input-wrap">
+          <input type="number" name="stress_hours" min="0" max="24" required>
+        </div>
+      </div>
+      <div class="question-item">
+        <p>Q 三食はどのくらい食べますか？</p>
+        <div class="input-wrap">
+        <label>
+          <input type="radio" name="eat" value="毎日" required>毎日
+        </label>
+        <label>
+          <input type="radio" name="eat" value="ほとんど">ほとんど毎日
+        </label>
+        <label>
+          <input type="radio" name="eat" value="しばしば">半分くらい
+        </label>
+        <label>
+          <input type="radio" name="eat" value="なし">食べません！
+        </label>
+        </div>
+      </div>
+      <div class="question-item">
+        <p>Q 普段現れる症状はどれですか？（複数選択可）</p>
+        <div class="input-wrap">
+          <label>
+            <input type="checkbox" name="stress_symptoms[]" value="頭痛">頭痛
+          </label>
+          <label>
+            <input type="checkbox" name="stress_symptoms[]" value="肩こり">肩こり
+          </label>
+          <label>
+            <input type="checkbox" name="stress_symptoms[]" value="胃の不調">胃の不調
+          </label>
+          <label>
+            <input type="checkbox" name="stress_symptoms[]" value="イライラ">イライラ
+          </label>
+          <label>
+            <input type="checkbox" name="stress_symptoms[]" value="不眠">不眠
+          </label>
+          <label>
+            <input type="checkbox" name="stress_symptoms[]" value="食欲の変化">食欲の変化
+          </label>
+        </div>
+      </div>
+      <input type="submit" value="診断" class="button">
+    </form>
+  </main>
+</body>
+</html>
+
